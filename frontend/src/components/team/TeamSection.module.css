@@ -1,0 +1,70 @@
+.container {
+  padding: 20px;
+  text-align: center;
+  margin-top: 4em;
+  background-image:url("D:\Full Stack Project\Bus Booking\Bus Booking\Bus-Booking-FrontEnd\src\assest\bg11.jpg");
+  height:800px;
+
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.highlight {
+  color: #f5a623;
+}
+
+.phrase{
+  color: aliceblue;
+  font-size: 28px;
+  margin-top: 70px;
+  
+  
+}
+
+.cardImage {
+  width: 8em;
+  height:8em;
+  border-radius: 60%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  background: #000;
+  border-color: #f2d7a6;
+  border-style:solid;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.card {
+  background:rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #140e0e;
+}
+
+.cardName {
+  font-size: 1.2rem;
+  color: #131212;
+}

@@ -1,0 +1,218 @@
+.landingPage {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+}
+
+.heroSection {
+  display: flex;
+  position: relative;
+  /* min-height: 865px; */
+  /* width: 100%; */
+  align-items: center;
+  justify-content: center;
+  padding: 8em 1em;
+}
+
+.heroImage {
+  position: absolute;
+  inset: 0;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroContent {
+  position: relative;
+  display: flex;
+  width: 885px;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.heroText {
+  background-color: rgba(255, 0, 0, 0.34);
+  color: #fff;
+  border-radius: 8px;
+}
+
+.heroTitle {
+  font-size: 38px;
+  text-align: center;
+}
+
+.heroSubtitle {
+  font-size: 38px;
+  text-align: center;
+  margin: 16px 0 0;
+}
+
+.bookNowButton {
+  border-radius: 0.6em;
+  background-color: #fff;
+  align-self: center;
+  /* width: 371px; */
+  max-width: 100%;
+  font-size: 2rem;
+  color: #4a4a4a;
+  margin: 223px 0 0 60px;
+  padding: 0.4em 1em;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bookNowButton:hover,
+.bookNowButton:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  outline: none;
+  color: #d9d9d9;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  max-width: 1251px;
+  flex-direction: column;
+  align-items: start;
+  font-size: 38px;
+  color: #000;
+  margin: 144px auto 0;
+  padding: 0 51px;
+}
+
+.sectionTitle {
+  font-size: 38px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.featuresSection {
+  width: 100%;
+}
+
+.featuresList {
+  margin: 34px 0 0 89px;
+}
+
+.feature {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.aboutSection {
+  width: 100%;
+  margin-top: 159px;
+}
+
+.aboutText {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 41px 0 0;
+  line-height: 1.6;
+}
+
+.valuesSection {
+  width: 100%;
+  margin-top: 135px;
+}
+
+.valuesList {
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+.valueItem {
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #d9d9d9;
+  min-height: 41px;
+  margin-top: 78px;
+  width: 100%;
+}
+
+.cta {
+  margin-top: 2em;
+}
+.ContactTitle {
+  font-size: 38px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.ContactDetails {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0.3em 0 0.3em 0;
+  line-height: 1.6;
+}
+
+.cta :last-child {
+  margin-bottom: 3em;
+}
+
+@media (max-width: 991px) {
+  .heroSection {
+    padding: 100px 20px;
+  }
+
+  .heroTitle {
+    font-size: 40px;
+  }
+
+  .heroSubtitle {
+    font-size: 24px;
+  }
+
+  .bookNowButton {
+    margin: 40px 0 0;
+    padding: 20px;
+    font-size: 24px;
+  }
+
+  .content {
+    max-width: 100%;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+  .featuresList {
+    margin-left: 0;
+  }
+
+  .aboutSection {
+    margin-top: 40px;
+  }
+
+  .aboutText {
+    margin-top: 40px;
+  }
+
+  .valuesSection {
+    margin-top: 40px;
+  }
+
+  .footer {
+    margin-top: 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bookNowButton {
+    transition: none;
+  }
+}
+
+@media screen and (forced-colors: active) {
+  .bookNowButton {
+    border: 2px solid currentColor;
+  }
+}

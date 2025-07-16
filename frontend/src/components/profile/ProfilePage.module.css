@@ -1,0 +1,209 @@
+.profilePage {
+  background: #fff;
+  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  padding-bottom: 66px;
+  background-image: url("/src/assests/bus.avif");
+}
+
+.passwordContainer {
+  position: relative;
+}
+
+.eyeIconButton {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.header {
+  background-color: #1d4078;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 54px;
+  font-size: 27px;
+  font-weight: 600;
+  opacity: 90%;
+  }
+
+.logo {
+  color: #ffffff;
+  margin: 0;
+  font-size: inherit;
+}
+
+.logoutButton {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.profileForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #eaeaea;
+  opacity: 90%;
+  border-radius: 30px;
+}
+
+.avatarContainer {
+  width: 127px;
+  height: 127px;
+  border-radius: 50%;
+  background-color: rgb(255, 251, 251);
+  background-image: url("/src/assests/user.png"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.infoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.infoGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 27px;
+}
+
+.label {
+  color: #181818;
+  font-weight: 600;
+}
+
+.input {
+  padding: 8px;
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 4px;
+  font-size: inherit;
+}
+
+.updateButton {
+  background-color: #1d4078;
+  border: none;
+  border-radius: 13px;
+  padding: 11px 64px;
+  font-size: 27px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  margin: auto;
+}
+
+.updateButton:hover {
+  background-color: rgb(33, 107, 225);
+}
+
+.bookingsSection {
+  margin-top: 123px;
+  padding: 20px;
+  max-width: 1151px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #252323;
+  font-size: 20px;
+  background-color: #eaeaea;
+  opacity: 90%;
+  border-radius: 20px;
+}
+
+.bookingsList {
+  background: rgba(217, 217, 217, 0.1);
+  padding: 23px 47px;
+  display: grid;
+  gap: 20px;
+}
+
+.bookingItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bookingDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bookingLabel {
+  color: rgb(33, 107, 225);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.bookingValue {
+  color: rgb(27 27 27);
+  font-size: 20px;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.deleteButton:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 20px;
+  }
+
+  .profileForm {
+    padding: 10px;
+  }
+
+  .infoContainer {
+    gap: 20px;
+  }
+
+  .infoGroup {
+    flex-direction: column;
+  }
+
+  .input {
+    font-size: 18px;
+  }
+
+  .updateButton {
+    font-size: 22px;
+    padding: 10px 40px;
+  }
+}

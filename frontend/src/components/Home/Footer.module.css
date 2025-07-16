@@ -1,0 +1,136 @@
+/* General Footer Styles */
+.footer {
+    background-color: #adabb6;
+    color: #ffffff;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 4px solid #f4fbf4;
+  }
+  
+  /* Footer Container */
+  .footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo Section */
+  .logoSection {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .logoLink {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+  }
+  
+  .logoLink:hover,
+  .logoLink:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+  
+  .logoImage {
+    margin-top: 10px;
+    width: 100px; /* Adjust the size of the logo */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .tagline {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    color: #ffffff;
+  }
+  
+  /* Links Section */
+  .linksSection {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footerLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  .footerLink {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 1.1rem;
+  }
+  
+  .footerLink:hover,
+  .footerLink:focus {
+    color: #ffffff;
+    outline: none;
+    font-size: 1.1rem;
+  }
+  
+  /* Social Media Section */
+  .socialMediaSection {
+    flex: 1;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .socialLink {
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .socialLink:hover,
+  .socialLink:focus {
+    color: #4caf50;
+    outline: none;
+  }
+  
+  /* Copyright Section */
+  .copyrightSection {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #d1d1d1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 991px) {
+    .footerContainer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .logoSection,
+    .linksSection,
+    .socialMediaSection {
+      flex: unset;
+      margin: 11px 0;
+      font-size: 1.1rem;
+    }
+  }

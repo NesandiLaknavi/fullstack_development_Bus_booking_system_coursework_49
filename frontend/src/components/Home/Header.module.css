@@ -1,0 +1,99 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  background-color: #d9d9d9;
+  display: flex;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 600;
+  justify-content: space-between;
+  padding: 10px 54px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+/* Add styles for the user button */
+.userButton {
+  background-color: #4caf50; /* Change to desired color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.userButton:hover {
+  background-color: #45a049;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.logoLink {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.logoLink:hover,
+.logoLink:focus {
+  opacity: 0.8;
+  outline: none;
+  text-decoration: underline;
+}
+
+.loginButton {
+  background: none;
+  border: 2px solid transparent;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+  font-weight: inherit;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.loginButton:hover,
+.loginButton:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-color: currentColor;
+}
+
+.loginButton:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 991px) {
+  .navigation {
+    padding: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logoLink,
+  .loginButton {
+    transition: none;
+  }
+}
+
+@media screen and (forced-colors: active) {
+  .loginButton {
+    border: 2px solid currentColor;
+  }
+}
